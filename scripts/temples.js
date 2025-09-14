@@ -41,7 +41,3 @@ window.addEventListener('resize', () => {
         }
     }})
 
-window.addEventListener('resize', handleResize);
-
-
-window.addEventListener('load', handleResize);
