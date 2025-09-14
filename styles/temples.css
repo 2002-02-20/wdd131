@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+header {
+    background: linear-gradient(135deg, #2c5f7f 0%, #1e4a62 100%);
+	display: grid;
+	grid-gap: 1rem;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 30px #333;
+}
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menuIcon, #closeIcon {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    
+}
+header,
+main {
+	margin: 0 auto;
+}
+
+#pricipal-text {
+	font-size: 2rem;
+    color: white;
+}
+
+ul {
+	list-style: none;
+}
+
+#closeIcon {
+    display: none;
+}
+
+#menuIcon {
+    display: block;
+}
+
+#navigation {
+    display: none; 
+}
+
+
+#navigation.show {
+    display: block;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: column;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: larger;
+}
+
+nav a:hover {
+	color: #000;
+    transition: 350ms;
+}
+main{
+margin-top: 1rem;
+ text-align: center;
+}
+
+img { width: 100%; height: auto; margin: .5rem;}
+figcaption {font-size: smaller;}
+section {margin: 1% ; padding: .5rem; display:grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); grid-gap: 25px;place-items: center;}
+
+footer {
+  background: linear-gradient(135deg, #1e4a62 0%, #2c5f7f 100%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer-content {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.last-modified {
+  font-size: 14px;
+  color: #ffd700;
+}
