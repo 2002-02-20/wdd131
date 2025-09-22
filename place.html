@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> WDD 131 – Dynamic Web Fundamentals - Derek Abraham Moscui Maldonado</title>
+    <title> WDD 131 - Dynamic Web Fundamentals - Derek Abraham Moscui Maldonado</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Derek Abraham Moscui Maldonado">
     <meta name="author" content="Derek Abraham Moscui Maldonado">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -26,6 +26,13 @@
         <div class="header-center"></div>
     </header>
     <main>
+        <picture>
+            <source media="(max-width: 740px)" srcset="./images/place-quito-small.webp">
+            <source media="(min-width: 741px)" srcset="./images/place-quito-large.webp">
+            <img src="./images/place-quito-small.webp"
+                alt="Place of Quito, Ecuador with a big square and a church in the background" loading="lazy"
+                class="responsive-image">
+        </picture>
         <section class="section-1">
             <h2>Data</h2>
             <p><strong>Area:</strong> 197.5 km²</p>
@@ -33,12 +40,15 @@
             <p><strong>Capital:</strong> Quito</p>
             <p><strong>Languages:</strong> Spanish</p>
             <p><strong>Currency:</strong> United States Dollar</p>
-            <p><strong>Time Zone:</strong> UTC−5</p>
+            <p><strong>Time Zone:</strong> UTC-5</p>
             <p><strong>Calling Code:</strong> +593</p>
             <p><strong>Internet TLD:</strong> .ec</p>
         </section>
         <section class="section-2">
-            <h2>Weather <img src="./images/weather.png" alt="icon of weather"></h2>
+            <div>
+                <h2>Weather </h2>
+                <img src="./images/weather_icon.svg" alt="icon of weather">
+            </div>
             <p><strong>Temperature:</strong><span id="temperature">13</span> °C</p>
             <p><strong>Conditions:</strong> Light rain shower</p>
             <p><strong>Wind:</strong><span id="wind">5.4</span> km/h</p>
