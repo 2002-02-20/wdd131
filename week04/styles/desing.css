@@ -1,0 +1,28 @@
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+img {
+    width: 100%;
+    background-color: #000;
+    animation: fade 10s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
