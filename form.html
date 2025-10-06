@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="./styles/form.css">
+</head>
+
+<body>
+    <form action="review.html" method="get">
+
+        <label for="product">Product:</label>
+        <select id="product" name="product" required>
+            <option value="" disabled selected>Choose a Product ...</option>
+        </select>
+
+        <label for="opcion">Overall Rating:</label>
+        <input type="radio" id="opcion" name="overall-rating" value="1" required><span>☆</span>
+        <input type="radio" id="opcion" name="overall-rating" value="2" required><span>☆☆</span>
+        <input type="radio" id="opcion" name="overall-rating" value="3" required><span>☆☆☆</span>
+        <input type="radio" id="opcion" name="overall-rating" value="4" required><span>☆☆☆☆</span>
+        <input type="radio" id="opcion" name="overall-rating" value="5" required><span>☆☆☆☆☆</span>
+
+        <label for="age">Date of Install:</label>
+        <input type="date" id="age" name="age" required>
+
+        <label for="feature">Which feature did you find useful in the product?(Check all that apply)</label>
+        <span class="checkbox-group">
+            <input type="checkbox" id="feature1" name="feature" value="feature1">
+            <label for="feature1">Feature 1</label>
+            <input type="checkbox" id="feature2" name="feature" value="feature2">
+            <label for="feature2">Feature 2</label>
+            <input type="checkbox" id="feature3" name="feature" value="feature3">
+            <label for="feature3">Feature 3</label>
+        </span>
+        <label for="review">Written Review: (Optional)</label>
+        <textarea id="review" name="review"></textarea>
+
+        <label for="name">Name: (Optional)</label>
+        <input type="text" id="name" name="name">
+
+        <input type="submit" value="Post Review">
+    </form>
+    <footer>
+        <p class="footer-content">
+            ©2025 <span>👨‍💻</span> Derek Moscui Maldonado <span>👨‍💻</span> Ecuador
+
+        </p>
+        <p class="last-modified">
+            Last Modification: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>

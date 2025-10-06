@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Successfully</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333333;
+            font-size: 28px;
+        }
+
+        #count {
+            display: block;
+            font-size: 60px;
+            color: #4CAF50;
+            margin: 30px 0;
+            font-weight: bold;
+        }
+
+        p {
+            color: #666666;
+            font-size: 18px;
+        }
+
+        .back-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .back-button:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            #count {
+                font-size: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Thanks for Your Review</h1>
+        <span id="count">0</span>
+        <p>Your review has been submitted successfully!</p>
+        <a href="./form.html" class="back-button">Submit Another Review</a>
+    </div>
+    <script>
+        let count = localStorage.getItem('reviewCount');
+        if (!count) {
+            count = 0;
+        }
+
+        count = parseInt(count) + 1;
+        localStorage.setItem('reviewCount', count);
+        document.getElementById('count').textContent = count;
+    </script>
+</body>
+
+</html>
