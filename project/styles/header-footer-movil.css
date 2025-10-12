@@ -1,0 +1,29 @@
+@media (min-width: 740px) {
+	.header-section {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	nav ul {
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	nav a {
+		flex: 1 1 auto;
+	}
+	#menuIcon, #closeIcon {
+    display: none !important;
+  }
+
+  #menuIconImg, #closeIconImg {
+    display: none !important; 
+  }
+
+  #navigation,
+  #navigation.show {
+    display: block !important; 
+  }
+
+}
+
