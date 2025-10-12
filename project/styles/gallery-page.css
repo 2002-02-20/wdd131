@@ -1,4 +1,4 @@
-/* ===== Reset & Fonts ===== */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,11 +12,10 @@ background-color: #1c2a33;
   line-height: 1.6;
 }
 
-/* ===== Header ===== */
 
 header h1 {
   font-size: 1.5rem;
-  color: #FACC15; /* Dorado */
+  color: #FACC15; 
   letter-spacing: 1px;
 }
 
@@ -32,7 +31,7 @@ nav a:hover {
   transition: 0.3s;
 }
 
-/* ===== Main Section ===== */
+
 main {
   padding: 60px;
   text-align: center;
@@ -44,15 +43,14 @@ main h2 {
   margin-bottom: 40px;
 }
 
-/* ===== Gallery Grid ===== */
 .gallery-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajuste dinámico */
-  gap: 20px; /* Espaciado entre las cajas */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px; 
   justify-content: center;
   align-items: center;
-  max-width: 1200px; /* Limitar el ancho máximo del contenedor */
-  margin: 0 auto; /* Ce*/
+  max-width: 1200px; 
+  margin: 0 auto; 
 
 }
 
@@ -78,7 +76,6 @@ main h2 {
   object-fit: cover;
 }
 
-/* ===== Captions ===== */
 .caption {
   margin-top: 10px;
   background: rgba(17, 24, 39, 0.85);
@@ -99,19 +96,19 @@ main h2 {
 
 }
 
-/* ===== Responsive ===== */
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
   }
 .gallery-container {
-    grid-template-columns: repeat(2, 1fr); /* Máximo 2 columnas en pantallas pequeñas */
+    grid-template-columns: repeat(2, 1fr); 
   }
   .caption {
-    font-size: 0.9rem; /* Reducir el tamaño del texto */
-    min-width: 250px; /* Ajustar el ancho mínimo */
-    min-height: 80px; /* Ajustar la altura mínima */
-    padding: 6px; /* Reducir el padding */
+    font-size: 0.9rem; 
+    min-width: 250px; 
+    min-height: 80px; 
+    padding: 6px; 
   }
 }
 

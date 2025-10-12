@@ -1,5 +1,5 @@
 let quotes = [];
-//API OF GIT HUB
+
 async function obtenerCitaConAutor() {
   try {
     const respuesta = await fetch("https://thequotesapi.onrender.com/quotes");
@@ -12,7 +12,7 @@ async function obtenerCitaConAutor() {
   }
 }
 
-//variable renderApiGithub = renderApiGithub
+
 function renderApiGithub(apiData) {
   const sectionPrincipal = document.querySelector(".gallery-container");
   sectionPrincipal.innerHTML = "";

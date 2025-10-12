@@ -1,4 +1,4 @@
-/* ===== Reset & Fonts ===== */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@ body {
   background-color: #1c2a33;
 }
 
-/* ===== Header ===== */
+
 
 nav a {
   color: #ffffff;
@@ -27,13 +27,13 @@ nav a:hover {
   transition: 0.3s;
 }
 
-/* ===== Main Section ===== */
+
 main {
   padding: 60px;
   text-align: center;
 }
 
-/* ===== Welcome + Purpose Boxes ===== */
+
 .section-container {
   display: flex;
   flex-wrap: wrap;
@@ -66,8 +66,8 @@ main {
   display: flex;
   align-items: center;
   gap: 15px;
-  max-height: 400px; /* Ajusta la altura máxima según tus necesidades */
-  overflow-y: hidden; /* Habilita el scroll vertical */
+  max-height: 400px;
+  overflow-y: hidden; 
   overflow-x: auto;
 }
 .box h2 {
@@ -81,7 +81,6 @@ main {
   font-size: 1rem;
 }
 
-/* ===== Buttons ===== */
 .buttons {
   margin-top: 40px;
 }
@@ -99,11 +98,11 @@ button {
 }
 
 button:hover {
-  background-color: #b91c1c; /* Crimson */
+  background-color: #b91c1c;
   color: #ffffff;
 }
 
-/* ===== Responsive Design ===== */
+
 @media (max-width: 740px) {
   header {
     flex-direction: column;
@@ -122,25 +121,25 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-height: 400px; /* Ajusta la altura máxima según tus necesidades */
-    overflow-y: auto; /* Habilita el scroll vertical */
+    max-height: 400px; 
+    overflow-y: auto; 
     overflow-x: hidden;
   }
 }
 
-/*box of image*/
+
 .temple-name {
   background-color: #0d1e29;
   min-width: 400px;
   height: 350px;
   padding: 20px;
   border-radius: 16px;
-  display: inline-block; /* Asegura que los elementos estén en línea */
+  display: inline-block;
   align-items: center;
 }
 
 .temple-name:hover {
-  background-color: #facc15; /* Crimson */
+  background-color: #facc15;
   transition: 0.5s;
   color: black;
 }

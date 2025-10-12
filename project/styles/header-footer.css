@@ -99,7 +99,7 @@ nav a:hover {
   height: auto;
 }
 
-/* Estilos para el footer */
+
 footer {
   background: linear-gradient(135deg, #122836 0%, #347fa8 100%);
   color: white;
@@ -118,7 +118,6 @@ footer {
   color: #ffd700;
 }
 
-/* Estilos adicionales para el contenido del footer */
 #location {
   margin-top: 12px;
 }
@@ -141,7 +140,7 @@ footer {
   color: #000000;
 }
 
-/* Estilos adicionales del header y footer tomados de filtered-temples.css */
+
 main {
   margin-top: 1rem;
   text-align: center;

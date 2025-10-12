@@ -28,7 +28,7 @@ async function obtenerCitaConAutor() {
 
 async function obtenerCitaConAutor() {
   try {
-    // Obtener autor aleatorio
+   
     const autorRes = await fetch('https://thequotesapi.onrender.com/quotes/random');
     const autorData = await autorRes.json();
 
@@ -38,13 +38,13 @@ async function obtenerCitaConAutor() {
     const imagen = autorData.image;
     const quote = autorData.quote;
 
-    // Obtener frase del autor
+
     const fraseRes = await fetch(`https://thequotesapi.onrender.com/quotes/random`);
     const fraseData = await fraseRes.json();
     console.log(fraseData);
     const frase = fraseData[0]?.quote || "Frase no encontrada";
 
-    // Mostrar en HTML
+
     document.getElementById("nombre").textContent = nombre;
     document.getElementById("frase").textContent = `"${frase}"`;
     document.getElementById("foto").src = imagen;

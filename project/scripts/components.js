@@ -1,4 +1,4 @@
-// Función para generar el contenido del header
+
 function createHeaderContent() {
   return `
      <section class="header-section">
@@ -18,7 +18,7 @@ function createHeaderContent() {
   `;
 }
 
-// Función para generar el contenido del footer
+
 function createFooterContent() {
   return `
     <p class="footer-content">
@@ -30,16 +30,15 @@ function createFooterContent() {
   `;
 }
 
-// Insertar el header y el footer en el DOM
+
 document.addEventListener("DOMContentLoaded", () => {
   const headerContainer = document.getElementById("header");
   const footerContainer = document.getElementById("footer");
 
-  // Insertar contenido en los contenedores existentes
   headerContainer.innerHTML = createHeaderContent();
   footerContainer.innerHTML = createFooterContent();
 
-  // Actualizar dinámicamente el año y la última modificación
+
   document.getElementById("currentYear").textContent = new Date().getFullYear();
   document.getElementById("lastModified").textContent = new Date().toLocaleString("en-GB", {
     day: "2-digit",
@@ -51,7 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
     hour12: false,
   }).replace(",", "");
 
-  // Funcionalidad del menú
 
 const menuIcon = document.getElementById('menuIcon');
 const closeIcon = document.getElementById('closeIcon');
@@ -63,7 +61,7 @@ menuIcon.addEventListener('click', () => {
     closeIcon.style.display = 'block';
 });
 
-// Función para cerrar el menú
+
 closeIcon.addEventListener('click', () => {
     navLinks.classList.remove('show');
     closeIcon.style.display = 'none';
